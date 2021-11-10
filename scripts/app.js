@@ -24,15 +24,15 @@ window.addEventListener('DOMContentLoaded',()=>{
                     }).then((response) => {
                         console.dir(response.data[10])
                         response.data.forEach(repo => {
-                        this.repos.push({
-                            name : repo.name,
-                            description : repo.description,
-                            date : repo.created_at,
-                            download : repo.downloads_url
-                        })
-                  });
-                }) 
-            }
+                            this.repos.push({
+                                name : repo.name,
+                                description : repo.description,
+                                date : repo.created_at,
+                                download : repo.downloads_url
+                            })
+                        });
+                    }) 
+                }
         },
         
         mounted(){ 
