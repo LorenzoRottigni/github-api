@@ -29,9 +29,9 @@
                     </div>
                     <ul class="bg-light rounded shadow list-group mt-5 mx-3">
                         <li v-for="(repo, index) in repos" class="py-3 list-group-item px-5 mt-2">
-                          <h4 class="text-primary">{{`Repository name: ` + repo.name}}</h3>
-                          <h5 class="text-secondary">{{`Repository description: ` + repo.description}}</h4>
-                          <h6 class="text-warning">{{`Repository creation date: ` + repo.date}}</h5>
+                          <h4 class="text-primary">{{`Repository name: ` + repo.name}}</h4>
+                          <h5 class="text-secondary">{{`Repository description: ` + repo.description}}</h5>
+                          <h6 class="text-warning">{{`Repository creation date: ` + repo.date}}</h6>
                           <button class="btn btn-outline-primary" @click="window.location.replace('https://github.com/LorenzoRottigni/' + repo.name + '/archive/refs/heads/main.zip')">Download</button>
                         </li>
                         
