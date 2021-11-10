@@ -12,7 +12,7 @@ window.addEventListener('DOMContentLoaded',()=>{
             username : 'LorenzoRottigni',
             url : `https://api.github.com/users/`,
             repos : [],
-            gitToken : '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'
+            gitToken : 'write here your token code'
         },
         methods : {
             getRepos(){
